@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F6EFE5">
+  <meta name="description" content="Housing Affordability Finance (HAF) is now known as Double Honour.">
+  <title>We've moved | Housing Affordability Finance</title>
+  <!-- Same font family used on the Double Honour website. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #F6EFE5;
+      --brown: #2B1A10;
+      --gold: #977239;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; min-width: 320px; min-height: 100%; }
+    body {
+      background: var(--paper);
+      color: var(--brown);
+      font-family: "Manrope", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    main {
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      margin-inline: auto;
+      padding: 35px 24px 72px; /* symmetric horizontal padding; everything centred */
+    }
+    .eyebrow {
+      margin: 0;
+      color: var(--gold);
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 1.35;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 96px auto 0;
+      max-width: 100%;
+      color: var(--brown);
+      font-size: clamp(56px, 6.85vw, 124px);
+      font-weight: 400;
+      line-height: 1.025;
+      letter-spacing: 0;
+      text-align: center;
+    }
+    h1 span { display: block; }
+    .description {
+      margin: 82px auto 0;
+      max-width: 100%;
+      color: var(--gold);
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: .05em;
+      text-align: center;
+    }
+    .description strong { font-weight: 700; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      margin: 105px auto 0;
+      padding: 12px 24px;
+      min-height: 51px;
+      color: #fff;
+      background: var(--brown);
+      border: 0;
+      border-radius: 0;
+      font-family: inherit;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.3;
+      letter-spacing: .14em;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: background-color .15s ease;
+    }
+    .button:hover { background: #4b3020; }
+    .button:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
+    @media (max-width: 900px) {
+      main { padding: 45px 22px 70px; }
+      .eyebrow { font-size: 20px; }
+      h1 { margin-top: 75px; font-size: clamp(48px, 8vw, 84px); letter-spacing: -.055em; }
+      .description { margin-top: 64px; font-size: clamp(17px, 2.5vw, 23px); }
+      .button { margin-top: 80px; font-size: 15px; }
+    }
+    @media (max-width: 600px) {
+      main { justify-content: center; padding: 40px 18px 52px; }
+      .eyebrow { font-size: 15px; letter-spacing: .14em; }
+      h1 { margin-top: 56px; font-size: clamp(34px, 9.0vw, 54px); line-height: 1.1; letter-spacing: -.055em; }
+      .description { margin-top: 42px; max-width: 400px; font-size: 17px; line-height: 1.55; }
+      .button { margin-top: 54px; max-width: 100%; padding-inline: 18px; font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">We've moved!</p>
+    <h1><span>A new chapter.</span><span>The same mission.</span></h1>
+    <p class="description">Housing Affordability Finance (HAF) is now known as <strong>Double Honour</strong>.</p>
+    <a class="button" href="https://doublehonour.com/">Visit our new website</a>
+  </main>
+  <script>
+    // The GitHub Pages 404 fallback shows this same holding page and, on the
+    // live HAF custom domain, directs visitors using former subpage URLs home.
+    if ((location.hostname === 'housingaffordability.co' || location.hostname === 'www.housingaffordability.co')
+        && location.pathname !== '/' && location.pathname !== '/index.html') {
+      location.replace('/');
+    }
+  </script>
+</body>
+</html>
